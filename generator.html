@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Create - สร้าง QR Code ฟรี</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+    <body>
+    <nav>
+    <div class="container">
+        <div class="nav-con">
+            <div class="logo"><a href="index.html">
+                <i class="fa-solid fa-qrcode"></i>
+                QR Create
+            </a></div>
+            <ul class="menu">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="index.html#what-is-qr">QR Code คืออะไร?</a></li>
+                <li><a href="index.html#contact">ติดต่อ</a></li>
+                <li><a href="generator.html" class="btn-create">สร้าง QR</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section class="maincontent" id="generator">
+    <div class="container">
+        <div class="maincontent-con">
+            <div class="maincontent-info">
+                <h1>สร้าง QR Code ฟรี</h1>
+                <p>สร้าง QR Code ได้ง่าย ๆ โดยไม่ต้องสมัครสมาชิก ไม่มีโฆษณารบกวน <br>
+                    และ ดาวน์โหลดไปใช้งานได้ฟรี</p>
+
+                    <div class="qr-color">
+                    <div class="color-option">
+                    <label for="qr-dark">สี QR Code</label>
+                    <input type="color" id="qr-dark" value="#112D4E">
+                </div>
+
+                    <div class="color-option">
+                        <label for="qr-light">สีพื้นหลัง</label>
+                        <input type="color" id="qr-light" value="#F9F7F7">
+                </div>
+                    </div>
+                <div class="qr-presets">
+                    <span>สีแนะนำ</span>
+                        <button type="button" class="preset" data-dark="#112D4E" data-light="#F9F7F7" title="น้ำเงิน"></button>
+                        <button type="button" class="preset" data-dark="#000000" data-light="#FFFFFF" title="ดำ"></button>
+                        <button type="button" class="preset" data-dark="#1B5E20" data-light="#F1F8E9" title="เขียว"></button>
+                        <button type="button" class="preset" data-dark="#8E1B1B" data-light="#FFF5F5" title="แดง"></button>
+                        <button type="button" class="preset" data-dark="#4A148C" data-light="#F3E5F5" title="ม่วง"></button>
+                </div>
+                    <div class="qr-input">
+                    <input type="text" id="qr-text" placeholder="วางลิงก์หรือพิมพ์ข้อความที่นี่">
+                    <button type="button" id="btn-generate">สร้าง QR Code</button>
+                </div>
+            </div>
+
+            <div class="maincontent-img">
+                <div class="qr-preview" id="qr-preview">
+                    <i class="fa-solid fa-qrcode"></i>
+                </div>
+
+                <button type="button" id="btn-download" disabled>
+                    <i class="fa-solid fa-download"></i>
+                     ดาวน์โหลด QR Code
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="script.js"></script>  
+</body>
+</html>

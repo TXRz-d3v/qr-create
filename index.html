@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Create - สร้าง QR Code ฟรี</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+    <body>
+    <nav id="home">
+    <div class="container">
+        <div class="nav-con">
+            <div class="logo"><a href="index.html">
+                <i class="fa-solid fa-qrcode"></i>
+                QR Create
+            </a></div>
+            <ul class="menu">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="#what-is-qr">QR Code คืออะไร?</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+                <li><a href="generator.html" class="btn-create">สร้าง QR</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-con">
+            <div class="hero-text">
+                <span class="hero-label">QR Create</span>
+                <h1>เปลี่ยนลิงก์เว็บไซต์ <br> และข้อความของคุณให้เป็น QR Code</h1>
+                <p>ได้อย่างง่ายดาย สะดวก รวดเร็ว พร้อมดาวน์โหลดไปใช้งานได้ทันที <br>  โดยไม่มีโฆษณารบกวนและไม่จำเป็นต้องสมัครสมาชิก</p>
+                <a href="generator.html" class="hero-btn">เริ่มสร้าง QR Code</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-circle"></div>
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+
+                <div class="laptop">
+                    <div class="laptop-screen">
+                        <div class="laptop-display">
+                            <div class="laptop-bar"><span></span><span></span><span></span></div>
+                            <div class="laptop-qr" id="hero-qr-laptop"></div>
+                        </div>
+                    </div>
+                    <div class="laptop-base"></div>
+                </div>
+
+                <div class="phone">
+                    <div class="phone-screen">
+                        <div id="hero-qr-phone"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="info" id="what-is-qr">
+    <div class="container">
+        <h2>QR Code คืออะไร?</h2>
+        <p class="info-text">QR Code (Quick Response Code) คือ เทคโนโลยีบาร์โค้ด 2 มิติที่ถูกออกแบบมาเพื่อจัดเก็บและประมวลผลข้อมูลได้อย่างรวดเร็ว 
+            ช่วยให้เครื่องมืออิเล็กทรอนิกส์หรือกล้องสมาร์ทโฟนสามารถอ่านและนำผู้ใช้งานเข้าถึงข้อมูลในระบบออนไลน์ได้ทันทีผ่านการสแกนเพียงครั้งเดียว 
+            โดยทำหน้าที่เป็นตัวกลางในการเชื่อมโยงข้อมูลจากโลกจริงเข้าสู่ระบบดิจิทัลได้อย่างสะดวกรวดเร็วโดยไม่ต้องเสียเวลาพิมพ์ค้นหาข้อมูลด้วยตนเอง <br>
+            ยกตัวอย่างเช่น</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>เมนูร้านอาหาร</h3>
+                <p>วางบนโต๊ะให้ลูกค้าสแกนดูเมนูและราคาได้เอง</p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>ป้ายประชาสัมพันธ์</h3>
+                <p>ใส่บนโปสเตอร์หรือใบปลิวเพื่อพาไปยังหน้าเว็บหรือแบบฟอร์ม</p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-id-card"></i>
+                <h3>นามบัตร</h3>
+                <p>แชร์ลิงก์พอร์ตโฟลิโอหรือช่องทางติดต่อได้ในการสแกนครั้งเดียว</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <h2>ติดต่อ</h2>
+        <p>มีคำถามหรือข้อเสนอแนะเกี่ยวกับเว็บไซต์ ติดต่อได้ที่</p>
+        <p><i class="fa-solid fa-envelope"></i> chaolapatchaosurin@email.com</p>
+        <p><i class="fa-brands fa-line"></i> LINE: <a href="https://line.me/ti/p/~chaolapat.16" target="_blank">chaolapat.16</a></p>
+    </div>
+</section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="home.js"></script>
+</body>
+</html>
